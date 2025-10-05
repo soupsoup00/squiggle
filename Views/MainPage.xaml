@@ -8,7 +8,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.Content>
-        <StackPanel
+        <StackPanel 
+            Orientation="Horizontal"
             HorizontalAlignment="Center"
             Spacing="25"
             VerticalAlignment="Center">
@@ -16,23 +17,34 @@
                 FontSize="24"
                 HorizontalAlignment="Center"
                 Style="{StaticResource MyLabel}"
-                Text="Hello, World!" />
-            <TextBlock
-                FontSize="20"
+                Text="Side panel" />
+            <StackPanel
                 HorizontalAlignment="Center"
-                Style="{StaticResource MyLabel}"
-                Text="Welcome to WinUI 3!" />
-            <TextBlock
-                x:Name="txtCount"
-                FontSize="16"
-                HorizontalAlignment="Center"
-                Style="{StaticResource MyLabel}"
-                Text="Current count: 0" />
-            <Button
-                Click="OnCountClicked"
-                Content="Click Me"
-                HorizontalAlignment="Center"
-                Style="{StaticResource PrimaryAction}" />
+                Spacing="25"
+                VerticalAlignment="Center">
+                <TextBlock
+                    FontSize="24"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource MyLabel}"
+                    Text="Hello, World!" />
+                <TextBlock
+                    FontSize="20"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource MyLabel}"
+                    Text="Welcome to WinUI 3!" />
+                <TextBlock
+                    x:Name="txtCount"
+                    FontSize="16"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource MyLabel}"
+                    Text="Current count: 0" />
+                <Button
+                    Click="OnCountClicked"
+                    Content="Click Me"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource PrimaryAction}" />
+            </StackPanel>
+           
         </StackPanel>
     </Page.Content>
 </Page>
